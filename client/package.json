@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "apollo-boost": "^0.4.9",
     "apollo-server-express": "^2.15.0",
     "bootstrap": "^4.4.1",
     "graphql": "^15.8.0",
@@ -16,7 +17,8 @@
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^5.0.0",
+    "yarn": "^1.22.18"
   },
   "scripts": {
     "start": "react-scripts start",
