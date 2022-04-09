@@ -15,7 +15,11 @@ router.route('/').post(createUser).put(authMiddleware, saveBook);
 
 router.route('/login').post(login);
 
+router.route('/signup').post(createUser);
+
 router.route('/me').get(authMiddleware, getSingleUser);
+
+router.route('/saved').get(saveBook);
 
 router.route('/books/:bookId').delete(authMiddleware, deleteBook);
 
