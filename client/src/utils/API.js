@@ -1,3 +1,5 @@
+import token from './auth';
+
 // route to get logged in user's info (needs the token)
 export const getMe = (token) => {
   return fetch('/api/users/me', {
@@ -9,7 +11,7 @@ export const getMe = (token) => {
 };
 
 export const createUser = (userData) => {
-  return fetch('/api/users', {
+  return fetch('/api/users/signup', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -23,6 +25,7 @@ export const loginUser = (userData) => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      authorization: `Bearer ${token}`,
     },
     body: JSON.stringify(userData),
   });
@@ -55,3 +58,4 @@ export const deleteBook = (bookId, token) => {
 export const searchGoogleBooks = (query) => {
   return fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
 };
+
