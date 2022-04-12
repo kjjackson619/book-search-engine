@@ -6,7 +6,7 @@ so that I can keep a list of books to purchase
 
 ## Deployed App
 
-* npm run develop to start app
+https://shielded-cliffs-08190.herokuapp.com/
 
 <img width="1440" alt="Screen Shot 2022-04-10 at 9 27 39 PM" src="https://user-images.githubusercontent.com/92461865/162650346-d6ec04d3-b87b-42e0-b4f9-286dd81a318d.png">
 
